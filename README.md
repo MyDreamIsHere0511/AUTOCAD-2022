@@ -23,7 +23,7 @@
 
 <a name="quytac"></a>
 ## ⚡ QUY TẮC VẬN HÀNH CHUNG
-* Luôn để ngôn gữ là ENG khi thao tác để không bị lỗi khi nhập lệnh.
+* Luôn để ngôn ngữ là ENG khi thao tác để không bị lỗi khi nhập lệnh.
 * **Phím SPACE (Cách) = ENTER:** Ngón cái tay trái luôn đặt ở phím Space để gọi lệnh nhanh.
 * **Lặp lại lệnh:** Nhấn Space/Enter khi không có lệnh nào -> Gọi lại lệnh vừa dùng.
 * **Thoát lệnh:** Luôn nhấn `ESC` (2-3 lần) để hủy bỏ lệnh cũ trước khi nhập lệnh mới.
