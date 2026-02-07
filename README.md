@@ -1,7 +1,7 @@
-# 🛠️ MinhKySu-AutoCAD-Mastery
-> Kho lưu trữ kiến thức, phím tắt và bài tập AutoCAD phục vụ lộ trình Kỹ sư Nhúng & Tự động hóa.
+# 🛠️ Clement-AutoCAD-2022
+> **Phiên bản áp dụng:** AutoCAD Mechanical 2022
 
-![AutoCAD](https://img.shields.io/badge/Tools-AutoCAD-red?style=flat-square)
+![AutoCAD](https://img.shields.io/badge/Tools-AutoCAD_Mechanical-red?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Learning-green?style=flat-square)
 ![Author](https://img.shields.io/badge/Author-Clement-blue?style=flat-square)
 
@@ -23,27 +23,27 @@
 
 <a name="quytac"></a>
 ## ⚡ QUY TẮC VẬN HÀNH CHUNG
-* **Phím SPACE (Cách) = ENTER:** Trong AutoCAD, ngón cái tay trái luôn đặt ở phím Space để gọi lệnh nhanh.
-* **Lặp lại lệnh:** Nhấn Space/Enter khi không có lệnh nào -> Gọi lại lệnh vừa dùng gần nhất.
-* **Thoát lệnh:** Luôn nhấn `ESC` (2-3 lần) để hủy bỏ lệnh hiện tại trước khi nhập lệnh mới.
-* **Chuột giữa (Đè xuống):** Pan (Kéo trượt màn hình).
-* **Chuột giữa (Lăn):** Zoom in / Zoom out.
+* **Phím SPACE (Cách) = ENTER:** Ngón cái tay trái luôn đặt ở phím Space để gọi lệnh nhanh.
+* **Lặp lại lệnh:** Nhấn Space/Enter khi không có lệnh nào -> Gọi lại lệnh vừa dùng.
+* **Thoát lệnh:** Luôn nhấn `ESC` (2-3 lần) để hủy bỏ lệnh cũ trước khi nhập lệnh mới.
+* **Bảng Setup (Dialog):** Nếu lệnh hiện bảng cài đặt, nhập số trực tiếp vào bảng hoặc gõ `D` để bật/tắt bảng này.
 
 ---
 
 <a name="group1"></a>
 ## 🛠️ Nhóm 1: Cài đặt & Hỗ trợ vẽ (Setup & Aids)
-*Các lệnh dùng để thiết lập môi trường và hỗ trợ quá trình đi nét.*
+*Các phím chức năng dùng liên tục trong quá trình vẽ.*
 
 | Lệnh / Phím | Phím Tắt | Chức Năng | Ghi chú |
 | :--- | :--- | :--- | :--- |
-| **MVSETUP** | `MVSETUP` | Thiết lập khổ giấy | Chọn No -> Metric -> Tỉ lệ |
-| **ORTHO** | `F8` | Chế độ vẽ thẳng góc | Chỉ vẽ ngang/dọc |
-| **POLAR** | `F10` | Chế độ vẽ theo tia | Vẽ xiên theo góc 30, 45... |
-| **DYNAMIC INPUT**| `F12` | Nhập liệu cạnh con trỏ | Nhấn TAB để chuyển ô |
-| **LINEWEIGHT** | `LWDISPLAY`| Hiển thị độ dày nét | Bật lên mới thấy nét đậm |
-| **ZOOMFACTOR** | `ZOOMFACTOR`| Tốc độ lăn chuột | Khuyên dùng: 60 - 100 |
+| **ORTHO** | `F8` | Chế độ vẽ thẳng góc | Bật liên tục để vẽ ngang/dọc |
+| **DYNAMIC INPUT**| `F12` | Hiển thị & Nhập liệu | Nhập số cạnh con trỏ chuột |
+| **CHUYỂN Ô** | `TAB` | Chuyển đổi nhập liệu | Chuyển giữa ô Chiều dài <-> Ô Góc (khi bật F12) |
 | **TỌA ĐỘ CỰC** | `@L<A` | Nhập độ dài và góc | Ví dụ: `@100<45` |
+| **POLAR** | `F10` | Chế độ vẽ theo tia | Vẽ xiên theo góc 30, 45... |
+| **MVSETUP** | `MVSETUP` | Thiết lập khổ giấy | Chọn No -> Metric -> Tỉ lệ (Chỉ dùng lúc đầu) |
+| **LINEWEIGHT** | `LWDISPLAY`| Hiển thị độ dày nét | Bật lên mới thấy nét đậm/nhạt |
+| **ZOOMFACTOR** | `ZOOMFACTOR`| Tốc độ lăn chuột | Khuyên dùng: 60 - 100 |
 
 [⬆️ Về đầu trang](#-mục-lục-table-of-contents)
 
@@ -51,22 +51,22 @@
 
 <a name="group2"></a>
 ## ✏️ Nhóm 2: Công cụ Vẽ (Draw - Group A)
-*Các lệnh tạo hình cơ bản.*
+*Các lệnh tạo hình cơ bản, sắp xếp theo độ phổ biến.*
 
-| Lệnh | Phím Tắt | Chức Năng |
-| :--- | :--- | :--- |
-| **LINE** | `L` | Vẽ đường thẳng rời. |
-| **POLYLINE** | `PL` | Vẽ đa tuyến liền mạch (Nét liền). |
-| **XLINE** | `XL` | Vẽ đường dóng vô tận (Dùng dựng hình). |
-| **MULTILINE** | `ML` | Vẽ 2 nét song song (Vẽ tường). |
-| **RECTANGLE** | `REC` | Vẽ hình chữ nhật (`F` để bo góc, `C` vát mép). |
-| **POLYGON** | `POL` | Vẽ đa giác đều (`I`: Nội tiếp, `C`: Ngoại tiếp). |
-| **CIRCLE** | `C` | Vẽ hình tròn. |
-| **ARC** | `A` | Vẽ cung tròn. |
-| **ELLIPSE** | `EL` | Vẽ hình Bầu dục. |
-| **HATCH** | `H` | Tô vật liệu (Mặt cắt). |
-| **DIVIDE** | `DIV` | Chia đoạn thẳng thành n phần bằng nhau. |
-| **MEASURE** | `ME` | Chia đoạn thẳng theo độ dài cho trước. |
+| Lệnh | Phím Tắt | Chức Năng | Ghi chú quan trọng |
+| :--- | :--- | :--- | :--- |
+| **LINE** | `L` | Vẽ đường thẳng rời. | Lệnh dùng nhiều nhất |
+| **CIRCLE** | `C` | Vẽ hình tròn. | |
+| **RECTANGLE** | `REC` | Vẽ hình chữ nhật. | `F`: Bo tròn (Fillet)<br>`M`: Vát mép (chaMfer)<br>`D`: Bảng cài đặt (Dialog) |
+| **POLYLINE** | `PL` | Vẽ đa tuyến liền mạch. | Các nét dính liền nhau |
+| **ARC** | `A` | Vẽ cung tròn. | |
+| **POLYGON** | `POL` | Vẽ đa giác đều. | `I`: Nội tiếp, `C`: Ngoại tiếp |
+| **HATCH** | `H` | Tô vật liệu (Mặt cắt). | |
+| **ELLIPSE** | `EL` | Vẽ hình Bầu dục. | |
+| **XLINE** | `XL` | Vẽ đường dóng vô tận. | Dùng để dựng hình chiếu |
+| **MULTILINE** | `ML` | Vẽ 2 nét song song. | Dùng vẽ tường nhà |
+| **DIVIDE** | `DIV` | Chia đoạn thẳng đều nhau. | Rải điểm point |
+| **MEASURE** | `ME` | Chia đoạn theo độ dài. | |
 
 [⬆️ Về đầu trang](#-mục-lục-table-of-contents)
 
@@ -74,26 +74,26 @@
 
 <a name="group3"></a>
 ## ✂️ Nhóm 3: Công cụ Chỉnh sửa (Modify - Group B)
-*Các lệnh can thiệp, sửa đổi đối tượng.*
+*Các lệnh sửa hình, lệnh nào dùng nhiều để lên trên.*
 
 | Lệnh | Phím Tắt | Chức Năng |
 | :--- | :--- | :--- |
 | **ERASE** | `E` | Xóa đối tượng. |
-| **COPY** | `CO` / `CP`| Sao chép. |
-| **MIRROR** | `MI` | Lấy đối xứng (Soi gương). |
+| **TRIM** | `TR` | Cắt xén phần thừa. |
+| **MOVE** | `M` | Di chuyển đối tượng. |
+| **COPY** | `CO` / `CP`| Sao chép đối tượng. |
 | **OFFSET** | `O` | Copy song song (tạo tường/viền). |
-| **MOVE** | `M` | Di chuyển. |
+| **MIRROR** | `MI` | Lấy đối xứng (Soi gương). |
+| **FILLET** | `F` | Bo tròn góc (`R` nhập bán kính). |
 | **ROTATE** | `RO` | Xoay hình. |
+| **EXTEND** | `EX` | Phóng dãn đường tới đích. |
 | **SCALE** | `SC` | Phóng to / Thu nhỏ tỷ lệ. |
 | **STRETCH** | `S` | Kéo dãn hình (Quét chuột phải sang trái). |
-| **TRIM** | `TR` | Cắt xén phần thừa. |
-| **EXTEND** | `EX` | Phóng dãn đường tới đích. |
-| **BREAK** | `BR` | Ngắt đoạn thẳng tại 2 điểm. |
-| **JOIN** | `J` | Nối các nét rời thành 1 nét liền. |
-| **FILLET** | `F` | Bo tròn góc (`R` nhập bán kính). |
-| **CHAMFER** | `CHA` | Vát mép góc. |
+| **MATCH PROP** | `MA` | Copy thuộc tính (Layer/Màu). |
 | **ARRAY** | `AR` | Copy mảng (Hàng cột/Vòng tròn). |
-| **MATCH PROP** | `MA` | Copy thuộc tính (Layer/Màu) từ A sang B. |
+| **CHAMFER** | `CHA` | Vát mép góc. |
+| **JOIN** | `J` | Nối các nét rời thành 1 nét liền. |
+| **BREAK** | `BR` | Ngắt đoạn thẳng tại 2 điểm. |
 
 [⬆️ Về đầu trang](#-mục-lục-table-of-contents)
 
@@ -104,10 +104,10 @@
 
 | Lệnh | Phím Tắt | Chức Năng |
 | :--- | :--- | :--- |
-| **TEXT STYLE** | `ST` | Cài đặt Font chữ. |
+| **DTEXT** | `DT` | Viết chữ đơn dòng (Nhanh). |
 | **MTEXT** | `MT` / `T` | Viết đoạn văn bản (Nhiều dòng). |
-| **DTEXT** | `DT` | Viết chữ đơn dòng. |
 | **EDIT** | `ED` | Sửa nội dung chữ/số. |
+| **TEXT STYLE** | `ST` | Cài đặt Font chữ. |
 | **FIND** | `FIND` | Tìm và thay thế chữ. |
 
 **Bảng mã ký tự (Gõ khi viết text):**
@@ -125,13 +125,13 @@
 
 | Lệnh | Phím Tắt | Chức Năng | Lưu ý |
 | :--- | :--- | :--- | :--- |
-| **DIMSTYLE** | `D` | Cài đặt kiểu đo | Chỉnh Text, Arrow, Unit |
-| **LINEAR** | `DLI` | Đo thẳng (Ngang/Dọc) | Không đo được đường chéo |
+| **LINEAR** | `DLI` | Đo thẳng (Ngang/Dọc) | Dùng nhiều nhất |
 | **ALIGNED** | `DAL` | Đo đường xiên/chéo | Dùng cho cạnh nghiêng |
+| **CONTINUE** | `DCO` | Đo nối tiếp | Cần có 1 Dim gốc trước |
 | **RADIUS** | `DRA` | Đo bán kính (R) | |
 | **DIAMETER** | `DDI` | Đo đường kính (Ø) | |
 | **ANGULAR** | `DAN` | Đo góc độ | |
-| **CONTINUE** | `DCO` | Đo nối tiếp | Cần có 1 Dim gốc trước |
+| **DIMSTYLE** | `D` | Cài đặt kiểu đo | Chỉnh Text, Arrow, Unit |
 | **BASELINE** | `DBA` | Đo song song | Đo từ 1 mốc chuẩn |
 
 [⬆️ Về đầu trang](#-mục-lục-table-of-contents)
@@ -145,8 +145,8 @@
 | :--- | :--- | :--- |
 | **BLOCK** | `B` | Đóng gói đối tượng thành khối. |
 | **EXPLODE** | `X` | Phá khối (Nổ) ra thành nét rời. |
-| **REFEDIT** | `REF` | Sửa khối tại chỗ. |
 | **PASTEBLOCK**| `Ctrl+Shift+V` | Dán thành Block ngay lập tức. |
+| **REFEDIT** | `REF` | Sửa khối tại chỗ. |
 
 [⬆️ Về đầu trang](#-mục-lục-table-of-contents)
 
@@ -159,11 +159,11 @@
 | :--- | :--- | :--- |
 | **ZOOM EXTENTS**| `Z` -> `E` | Zoom toàn bộ hình vừa màn hình. |
 | **ZOOM WINDOW** | `Z` -> `W` | Zoom vùng chọn. |
-| **ZOOM ALL** | `Z` -> `A` | Zoom tất cả không gian giấy. |
-| **AREA** | `AA` | Tính diện tích/Chu vi. |
 | **DISTANCE** | `DI` | Đo khoảng cách X, Y nhanh. |
-| **LIST** | `LI` | Xem thông tin chi tiết đối tượng. |
+| **AREA** | `AA` | Tính diện tích/Chu vi. |
+| **ZOOM ALL** | `Z` -> `A` | Zoom tất cả không gian giấy. |
 | **PURGE** | `PU` | Dọn rác, làm nhẹ bản vẽ. |
+| **LIST** | `LI` | Xem thông tin chi tiết đối tượng. |
 
 ---
 *Created by Clement - 2026*
