@@ -128,7 +128,7 @@
 | **POINT** | `PO` | Vẽ một điểm mốc. | Bắt lại bằng **Node** |
 | **DIVIDE** | `DIV` | Chia đối tượng thành số phần bằng nhau. | Rải điểm point |
 | **MEASURE** | `ME` | Chia đối tượng theo khoảng cách cố định. | Khác DIVIDE ở chỗ nhập độ dài |
-| **POINT STYLE** | `DDPTYPE` | Đổi kiểu hiển thị của điểm. | Dùng ngay sau POINT / DIVIDE / MEASURE |
+| **POINT STYLE** | `PTYPE` | Đổi kiểu hiển thị của điểm. | Dùng ngay sau POINT / DIVIDE / MEASURE |
 
 ---
 
